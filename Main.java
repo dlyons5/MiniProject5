@@ -10,7 +10,7 @@ class Main {
 
 //there is on average 100 chips in a pringles can
   public static void numChips(int n) {
-    if (n == 0){
+    if (n == 100){
        System.out.println("Done");
     }else{
       System.out.println(n);

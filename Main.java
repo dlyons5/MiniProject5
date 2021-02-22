@@ -14,9 +14,7 @@ class Main {
    System.out.println("So, what is your guess?");
    int pringlesGuess = scan.nextInt();
 
-    int result = sum(13);
-    System.out.println(result);
-    numChips(100);
+   numChips(100);
    
   }
 
@@ -29,23 +27,10 @@ class Main {
       n--;
       numChips(n);
     }
-}
-
-//
-  public static int sum(int num)
-  {
-    if(num > 0)
-    {
-      return num + sum(num - 1);
-      // 
-    }else{
-      return 0;
-      //
-   
-   
-    }
   }
 }
+  
+
 
 
 

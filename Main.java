@@ -14,7 +14,7 @@ class Main {
    System.out.println("So, what is your guess?");
    int numChips = scan.nextInt();
 
-   numChips(100);
+   numChips(numChips);
    
   }
 
@@ -23,13 +23,22 @@ class Main {
     if (n == 100){
        System.out.println("correct");
     }else{
-      System.out.println(n);
-      n--;
-      numChips(n);
+      System.out.println("incorrect");
+      
+      Scanner scan = new Scanner(System.in);
+      
+      System.out.println("Try again");
+      int numChips = scan.nextInt();
+      
+      numChips(numChips);
     }
   }
 }
   
+ 
+ 
+ 
+
 
 
 

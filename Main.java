@@ -8,9 +8,9 @@ class Main {
    Scanner scan = new Scanner(System.in);
 
    System.out.println("Welcome");
-
+   //intoducing the game
    System.out.println("This is the game where you guess the amount of pringles in a pringles can ");
-
+   //asking the user for a guess
    System.out.println("So, what is your guess?");
    int numChips = scan.nextInt();
 
@@ -21,10 +21,13 @@ class Main {
 //there is on average 100 chips in a pringles can
   public static void numChips(int n) {
     if (n == 100){
-       System.out.println("correct");
+       
+       System.out.println("Correct!! :), there are 100 chips on average in a pringles can");
+
     }else{
-      System.out.println("incorrect");
       
+      System.out.println("Incorrect :(");
+      //have to make another scanner because it can't read the one from the other method, it will just spit out an error ---> 
       Scanner scan = new Scanner(System.in);
       
       System.out.println("Try again");

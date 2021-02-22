@@ -1,7 +1,19 @@
+//activates scanner 
+import java.util.Scanner;
+
 class Main {
   
   public static void main(String[] args) {
-    
+
+   Scanner scan = new Scanner(System.in);
+
+   System.out.println("Welcome");
+
+   System.out.println("This is the game where you guess the amount of pringles in a pringles can ");
+
+   System.out.println("So, what is your guess?");
+   int pringlesGuess = scan.nextInt();
+
     int result = sum(13);
     System.out.println(result);
     numChips(100);

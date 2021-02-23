@@ -12,18 +12,19 @@ class Main {
    System.out.println("This is the game where you guess the amount of pringles in a pringles can ");
    //asking the user for a guess
    System.out.println("So, what is your guess?");
-   int numChips = scan.nextInt();
+   int chips = scan.nextInt();
 
-   numChips(numChips);
+   numChips(chips);
    
   }
 
 //there is on average 100 chips in a pringles can
-  public static void numChips(int n) {
-    if (n == 100){
+  public static boolean numChips(int chips) {
+    if (chips == 100){
        
        System.out.println("Correct!! :), there are 100 chips on average in a pringles can");
-
+       return true;
+    
     }else{
       
       System.out.println("Incorrect :(");
@@ -31,9 +32,9 @@ class Main {
       Scanner scan = new Scanner(System.in);
       
       System.out.println("Try again");
-      int numChips = scan.nextInt();
+      chips = scan.nextInt();
       
-      numChips(numChips);
+      return numChips(chips);
     }
   }
 }
